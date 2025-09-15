@@ -3,7 +3,7 @@ import {Image, SafeAreaView, StyleSheet, Text,} from 'react-native';
 function Homee(){
   return(
     <SafeAreaView style={styles.container}>
-      <Image style={{width:150, height:150, borderRadius:5}} source={{uri: 'https://cdn-icons-png.flaticon.com/512/847/847969.png'}}/>
+      <Image style={{width:150, height:150, borderRadius:5}} source={{url: 'https://cdn-icons-png.flaticon.com/512/847/847969.png'}}/>
       <Text style={styles.h3}> Bienvenidos</Text>
       <Text style={styles.h2}> a la clase </Text>
       <Text style={styles.h2}> de materia de Desarrollo de aplicaciones moviles</Text>
