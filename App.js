@@ -1,10 +1,11 @@
-import Homee from './src/pages/Homee';
+// import Homee from './src/pages/Homee';
+import Butones from './src/pages/Butones';
 
 
 
  function App() {
   return (
-    <Homee/>
+    <Butones/>
     
   ); 
 
