@@ -10,6 +10,11 @@ const Formulario = () => {
         <TextInput placeholder="Escribe tu nombre" style={style.input} />
         <Text style={style.label}>Descripción:</Text>
         <TextInput  multiline={true} numberOfLines={4} style={[style.input, style.textArea]} placeholder="Describe tu personalidad"/>
+        <Text style={style.label}>Correo Electrónico</Text>
+        <TextInput style={style.input} placeholder="Ingrese el correo" keyboardType="email-address" />
+        <Text style={style.label}>Contraseña</Text>
+        <TextInput style={style.input} placeholder="************" secureTextEntry />
+
 
       </SafeAreaView>
     </View>
