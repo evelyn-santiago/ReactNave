@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Platform, StatusBar, Text, SafeAreaView, ScrollView, Image } from 'react-native';
+import { View, StyleSheet, Platform, StatusBar, Text, SafeAreaView, ScrollView, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ListaAlumnos = () => {
@@ -15,14 +15,17 @@ const ListaAlumnos = () => {
   {/* Cierre de AppBar */}
 
     {/* Inicio de contenido (lista de alumnos) */}
-    <ScrollView>
-        <Text style={style.sectionTitle}>Lista de Alumnos</Text>
+    <ScrollView style={{padding: 16 }}>
+        <Text style={style.sectionTitle}>Alumnos de aplicaciones Moviles</Text>
         <View style={style.card}>
         <Image source={{ uri: 'https://cdn-icons-png.flaticon.com/512/194/194938.png' }} style={style.avatar} />
         <View style={style.cardInfo}>
            <Text style={style.name}>Evelyn Santiago</Text>
             <Text style={style.userDetails}>Ing. en Sistemas Computacionales</Text>
         </View>
+        <TouchableOpacity style={style.saveButton}>
+        <Text style={style.saveButtonText}>Ver mas</Text>
+        </TouchableOpacity>
         </View>
     </ScrollView>
     {/* Cierre de contenido (lista de alumnos) */}
@@ -49,7 +52,43 @@ const style = StyleSheet.create({
   appBarTitle: {
     fontWeight: 'bold',
     fontSize: 16
-  }
+  },
+  sectionTitle: {
+  fontSize: 14,
+  fontWeight: 'bold',
+  padding :16,
+  // textAlign: 'center'
+  },
+  card: {
+  padding: 16,
+  flexDirection: 'row',
+  borderRadius: 16,
+  backgroundColor: '#fff',
+  elevation: 2,
+  marginBottom: 5
+},
+
+  avatar: {
+  width: 60,
+  height: 60,
+  borderRadius: 50,
+  marginRight: 12
+},
+cardInfo: {
+
+},
+userName: {
+
+},
+userDetails: {
+
+},
+saveButton: {
+
+},
+saveButtonText: {
+
+}
 });
 
 export default ListaAlumnos;
