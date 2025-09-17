@@ -2,6 +2,7 @@ import { SafeAreaView,StyleSheet, View, Text, Platform, StatusBar, TouchableOpac
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CardBasico from '../components/CardBasico';
 import CardImagen from '../components/CardImagen';
+import CardV2 from '../components/CardV2';
 
  export default function HomePrincipal() {
   return (
@@ -10,6 +11,7 @@ import CardImagen from '../components/CardImagen';
         <Text style={style.title}> Botones Personalizados </Text>
         <CardBasico/>
         <CardImagen/>
+        <CardV2/>
         
 
       </View>
@@ -21,7 +23,7 @@ import CardImagen from '../components/CardImagen';
 const style= StyleSheet.create({
     mainS:{
         flex:1,
-        backgroundColor: '#69a1bbb9',
+        backgroundColor: '#206d9173',
         paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight:44,
         padding:16
     },
