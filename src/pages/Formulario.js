@@ -1,5 +1,6 @@
 import React from "react";
-import { Platform, StatusBar, StyleSheet, View, Text, TextInput, SafeAreaView } from "react-native";
+import { Platform, StatusBar, StyleSheet, View, Text, TextInput, SafeAreaView,TouchableOpacity } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const Formulario = () => {
@@ -19,6 +20,11 @@ const Formulario = () => {
         <TextInput style={style.input} placeholder="************" secureTextEntry />
         <Text style={style.label}>Telefons:</Text>
         <TextInput style={style.input} placeholder="123456" keyboardType="phone-pad" />
+
+        <TouchableOpacity style={style.botonConIcono}>
+                    <Icon name="send" size={20} color="#fff" style={style.iconoIzquierda} />
+                    <Text style={style.textoBoton}>Boton Grande</Text>
+         </TouchableOpacity>
 
       </SafeAreaView>
     </View>
@@ -61,7 +67,19 @@ const style = StyleSheet.create({
     textArea: {
         height: 100, 
     textAlignVertical: 'top',
-    }
+    },
+    botonConIcono: {
+        backgroundColor: '#08bcc2ee',
+        marginTop: 10,
+        flexDirection: 'row',
+        alignContent: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        borderRadius: 15
+    },
+    iconoIzquierda: {
+        marginRight: 10
+    },
 
 });
 
