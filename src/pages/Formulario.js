@@ -9,7 +9,7 @@ const Formulario = () => {
         <Text>Nombre:</Text>
         <TextInput placeholder="Escribe tu nombre" style={style.input} />
         <Text style={style.label}>Descripción:</Text>
-        <TextInput style={[style.input, style.textArea]} placeholder="Describe tu personalidad"/>
+        <TextInput  multiline={true} numberOfLines={4} style={[style.input, style.textArea]} placeholder="Describe tu personalidad"/>
 
       </SafeAreaView>
     </View>
