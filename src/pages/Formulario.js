@@ -17,8 +17,6 @@ const Formulario = () => {
         <Text style={style.label}>Telefons:</Text>
         <TextInput style={style.input} placeholder="123456" keyboardType="phone-pad" />
 
-
-
       </SafeAreaView>
     </View>
   );
@@ -27,12 +25,12 @@ const Formulario = () => {
 const style = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: "#e2ecf05d",
+    backgroundColor: "#d6f3fffb",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
     mains: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#ddfffcff',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     padding: 16,
     },
