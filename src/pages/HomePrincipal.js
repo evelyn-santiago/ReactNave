@@ -1,6 +1,7 @@
 import { SafeAreaView,StyleSheet, View, Text, Platform, StatusBar, TouchableOpacity, Touchable} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CardBasico from '../components/CardBasico';
+import CardImagen from '../components/CardImagen';
 
  export default function HomePrincipal() {
   return (
@@ -8,6 +9,8 @@ import CardBasico from '../components/CardBasico';
     <View style={style.mainS}>
         <Text style={style.title}> Botones Personalizados </Text>
         <CardBasico/>
+        <CardImagen/>
+        
 
       </View>
 
