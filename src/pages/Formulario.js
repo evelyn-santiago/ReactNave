@@ -8,6 +8,9 @@ const Formulario = () => {
       <SafeAreaView style={style.mains}>
         <Text>Nombre:</Text>
         <TextInput placeholder="Escribe tu nombre" style={style.input} />
+        <Text style={style.label}>Descripción:</Text>
+        <TextInput style={[style.input, style.textArea]} placeholder="Describe tu personalidad"/>
+
       </SafeAreaView>
     </View>
   );
@@ -16,21 +19,30 @@ const Formulario = () => {
 const style = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: "#00b5ff",
+    backgroundColor: "#e2ecf05d",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
-  mains: {
+    mains: {
     flex: 1,
-    margin: 20,
-  },
-  input: {
+    backgroundColor: '#ffffff',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+    padding: 16,
+    },
+    label: {
+    fontWeight: 'bold',
+    marginBottom: 10,
+    },
+    input: {
+    height: 40,
+    borderColor: '#aaa',
     borderWidth: 1,
-    borderColor: "#fff",
-    padding: 8,
-    marginTop: 10,
-    borderRadius: 5,
-    backgroundColor: "#fff",
-  },
+    marginBottom: 10,
+    },
+    textArea: {
+        height: 100, 
+    textAlignVertical: 'top',
+    }
+
 });
 
 export default Formulario;
