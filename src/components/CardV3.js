@@ -1,6 +1,6 @@
 import { Text, View, StyleSheet, Image,TouchableOpacity,  Platform, } from "react-native";
 
-export default function CardV3() {
+export default function CardV() {
     return (
         <View style={style.card}>
             <Image style={style.img} source={{ uri: 'https://i.blogs.es/f7234d/imagen/500_333.webp' }} />
