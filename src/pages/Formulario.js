@@ -6,8 +6,11 @@ const Formulario = () => {
   return (
     <View style={style.main}>
       <SafeAreaView style={style.mains}>
+        <Text style={style.titulo}>Registro de alumno</Text>
         <Text>Nombre:</Text>
         <TextInput placeholder="Escribe tu nombre" style={style.input} />
+        <Text style={style.bold}>Carrera</Text>
+        <TextInput editable={false} style={style.input} placeholder="Escribe tu Carrera"/>
         <Text style={style.label}>Descripción:</Text>
         <TextInput  multiline={true} numberOfLines={4} style={[style.input, style.textArea]} placeholder="Describe tu personalidad"/>
         <Text style={style.label}>Correo Electrónico</Text>
@@ -25,12 +28,23 @@ const Formulario = () => {
 const style = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: "#d6f3fffb",
+    backgroundColor: "#fafafafb",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+  },
+  titulo: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "#2c3e50",
+    textAlign: "center",
+    textTransform: "uppercase",
+    letterSpacing: 2,
+    textShadowColor: "rgba(0, 0, 0, 0.25)",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
   },
     mains: {
     flex: 1,
-    backgroundColor: '#ddfffcff',
+    backgroundColor: '#f3fcfbff',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     padding: 16,
     },
