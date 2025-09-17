@@ -4,12 +4,13 @@
 // import HomePrincipal from './src/pages/HomePrincipal';
 // import Formulario from './src/pages/Formulario';
 import FormularioV2 from './src/pages/FormularioV2';
+import ListaAlumnos from './src/pages/Lista-Alumnos/ListaAlumnos';
 
 
 
  function App() {
   return (
-    <FormularioV2/>
+    <ListaAlumnos/>
   ); 
 
 }
